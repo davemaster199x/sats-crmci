@@ -1,0 +1,60 @@
+.greenRowBg {
+  background-color: $primary !important;
+  color: $light !important;
+}
+
+.tabs-section-nav {
+  .nav-item {
+    .nav-link.active {
+      color: $primary;
+    }
+
+    .nav-link-in {
+      border-top-color: transparent !important;
+
+      i,
+      .fa {
+        display: none;
+      }
+
+      .fa-hourglass-end::before {
+        content: '';
+      }
+    }
+  }
+}
+
+select {
+  option {
+    &:checked,
+    &:hover {
+      background: $primary !important;
+      color: $light !important;
+    }
+  }
+}
+
+.card-blue-fill {
+  .card-header {
+    background: $primary !important;
+    border-color: $primary !important;
+  }
+}
+
+.checkbox-toggle input:checked + label:before {
+  background-color: $primary !important;
+}
+
+.th_div {
+  strong {
+    span {
+      &.fa {
+        color: $primary !important;
+      }
+
+      &.font-icon {
+        color: $primary !important;
+      }
+    }
+  }
+}

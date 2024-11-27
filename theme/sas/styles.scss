@@ -1,0 +1,169 @@
+@use 'color' as *;
+@use 'media-queries' as m;
+
+@import 'login';
+@import 'navbar';
+@import 'sidebar';
+@import 'tab';
+@import 'scheduling';
+@import 'reports';
+@import 'tech';
+@import 'preloader';
+
+.green_success_box div.statistic {
+  background: $primary !important;
+}
+
+.color-blue {
+  color: $primary !important;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.btn,
+.btn-primary,
+.blue {
+  background: $primary !important;
+  border-color: $primary !important;
+  color: $light !important;
+}
+
+.btn {
+  background: $primary !important;
+  border-color: $primary;
+  color: $light !important;
+
+  &.btn-danger {
+    background-color: $danger !important;
+    border-color: transparent !important;
+  }
+
+  &.btn-danger-outline {
+    background-color: $light !important;
+    border: 1px $danger solid !important;
+    color: $danger !important;
+
+    &:hover {
+      background-color: $danger !important;
+      color: $light !important;
+    }
+  }
+
+  &.btn-success {
+    background-color: $success !important;
+    border-color: $success !important;
+  }
+
+  &.btn-secondary {
+    background-color: $secondary !important;
+    border-color: $secondary !important ;
+  }
+
+  &.btn-warning{
+    background-color: $warning !important;
+    border-color: $warning !important;
+  }
+
+  &.btn-info{
+    background-color: $info !important;
+    border-color: $info !important;
+  }
+
+  &.btn-primary-outline {
+    color: $primary!important;
+    border-color: $primary!important;
+    background-color: transparent!important;
+  }
+
+  &.btn-primary-outline:not(.btn_autofill_alarms):hover{
+    background-color: $primary!important;
+    color: #fff!important;
+  }
+
+  &.btn-primary-outline.btn_autofill_alarms:not(.active):hover{
+    color: $primary!important;
+  }
+}
+
+.btn.btn-primary:active,
+.btn.btn-primary:hover {
+  background-color: $primary !important;
+  border-color: $primary !important;
+}
+
+a,
+a:focus,
+a:hover {
+  color: $primary;
+}
+
+.badge-primary {
+  background-color: $primary !important;
+}
+
+.widget-weather {
+  .widget-weather-big {
+    background: $primary !important;
+  }
+}
+
+.booked_items {
+  .degrees {
+    color: $primary !important;
+  }
+}
+
+.crmAdd {
+  color: $primary !important;
+}
+
+.page-item.active .page-link {
+  background-color: $primary !important;
+  border-color: $primary !important;
+}
+
+#prevBtn {
+  background-color: $light !important;
+}
+
+#nextBtn {
+  background-color: $primary !important;
+  border: $primary !important;
+}
+
+.steps-numeric-block .steps-numeric-header-in .active {
+  color: $primary !important;
+}
+.steps-numeric-block .steps-numeric-header-in .active .num {
+  color: $primary !important;
+}
+
+.dataTables_filter input[type='search'] {
+  width: auto !important;
+  border: 1px solid $primary !important;
+}
+
+.card-blue-fill {
+  border-color: $primary !important;
+}
+
+#datatable th {
+  background-color: $primary !important;
+}
+
+.btn_autofill_alarms.active{
+    background-color: $primary!important;
+    color: #fff!important;
+}
+
+#tenants-tab li.active_tenants_menu a.active{
+	background-color: $primary!important;
+	color: #fff;
+}
+
+.booking_type_div .custom_tab_menu.active{
+  background-color: $primary!important;
+	color: #fff!important;
+}

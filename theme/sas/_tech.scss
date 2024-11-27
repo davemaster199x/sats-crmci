@@ -1,0 +1,25 @@
+header {
+  &.site-header {
+    .site-logo {
+      .tech_logo {
+        height: 70px;
+      }
+    }
+  }
+}
+
+#modal_btn_submit_kms {
+  &.btn {
+    border: $primary !important;
+    background: $primary !important;
+    padding: 0.5rem;
+  }
+}
+
+.fc-state-active {
+  background: $primary !important;
+}
+
+.strt-ui-header h3 {
+  color: $primary !important;
+}

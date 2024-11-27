@@ -1,0 +1,20 @@
+@import 'preloader';
+
+#datatable th {
+  background-color: #00a8ff !important;
+}
+
+table.dataTable thead>tr>th.sorting:before
+{
+  opacity: none !important;
+}
+
+#tenants-tab li.active_tenants_menu a.active{
+	background:#00a8ff;
+	color: #fff;
+}
+
+.booking_type_div .custom_tab_menu.active{
+  background-color: $primary!important;
+	color: #fff!important;
+}

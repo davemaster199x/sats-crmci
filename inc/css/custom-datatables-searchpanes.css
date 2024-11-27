@@ -1,0 +1,285 @@
+div.dtHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  padding: 0;
+}
+div.dtHeader #datatable_filter {
+  position: relative;
+  flex: 0 0 49%;
+}
+div.dtHeader #datatable_filter #btn-toggle-searchpanes {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  text-align: center;
+}
+div.dtHeader #datatable_filter #btn-toggle-searchpanes .fa {
+  width: 37px;
+  height: 37px;
+  line-height: 37px;
+}
+div.dtHeader #datatable_filter #btn-toggle-searchpanes .fa:hover {
+  color: #00a8ff;
+}
+
+.dtFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dtFlexRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 1em;
+  font-size: 14px;
+}
+.dtFlexRow > div {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.dtFlexRow > div select {
+  padding: 0 0.5em !important;
+  font-size: 14px;
+  height: 24px !important;
+  width: 60px !important;
+}
+
+.dtFlexRowCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.dtsp-panesContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #fefefe;
+}
+div.dtsp-panesContainer.active {
+  display: flex;
+  flex-direction: column-reverse;
+}
+div.dtsp-panesContainer div.dtsp-titleRow {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 12px;
+  /* Ordering divs*/
+}
+div.dtsp-panesContainer div.dtsp-titleRow * {
+  float: none;
+}
+div.dtsp-panesContainer div.dtsp-titleRow .dtsp-title {
+  order: 0;
+  padding: 10px;
+}
+div.dtsp-panesContainer div.dtsp-titleRow button {
+  order: 2;
+}
+div.dtsp-panesContainer div.dtsp-titleRow button.dtsp-disabledButton {
+  order: 1;
+}
+div.dtsp-panesContainer div.dtsp-titleRow button {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  padding: 0.25em 0.5em;
+  font-size: 1em;
+  line-height: 1;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-radius: 3px;
+  border: solid 1px #00a8ff;
+  background: #00a8ff;
+  color: #fff;
+  font-weight: 400;
+  margin-right: 0.5em;
+}
+div.dtsp-panesContainer div.dtsp-titleRow button.dtsp-disabledButton {
+  display: none;
+  background-color: #CCC;
+  border: solid 1px #CCC;
+}
+div.dtsp-panesContainer div.dtsp-titleRow button:hover {
+  cursor: pointer;
+  background-color: #16b4fc;
+  border-color: #16b4fc;
+}
+
+div.dtsp-subRowsContainer.dtsp-bordered div.dtsp-searchCont input.dtsp-search {
+  border: 0 !important;
+}
+
+div.dtsp-panesContainer div.dtsp-searchPanes div.dtsp-searchPane {
+  margin-top: 1.5em !important;
+}
+
+#dataTables_wrapper div.dataTables_filter input {
+  margin: 0;
+  font-size: 14px;
+  padding: 0.5em 1em;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 3px;
+}
+#dataTables_wrapper div.dataTables_filter input:focus {
+  box-shadow: 0 0 0.1em #00a8ff;
+  border-color: #00a8ff !important;
+}
+
+#datatable th {
+  background-color: #363636;
+  color: #FFF;
+}
+#datatable th, #datatable td {
+  text-align: left;
+  margin-left: 10px;
+}
+#datatable td {
+  padding: 0.5em 0.5em;
+  height: auto;
+  font-size: 14px;
+  line-height: 1.2;
+}
+#datatable tr.odd {
+  background-color: #eee;
+}
+
+div.dtsp-searchPane div.dtsp-topRow.dtsp-bordered:hover {
+  background-color: transparent;
+  border-color: #00a8ff;
+}
+div.dtsp-searchPane div.dtsp-topRow div.dtsp-searchCont input.dtsp-search {
+  padding-left: 1em;
+  border: 1px solid #eee;
+}
+div.dtsp-searchPane input.dtsp-paneInputButton, div.dtsp-searchPane div.dtsp-searchPane button.dtsp-paneButton {
+  margin: 0;
+}
+div.dtsp-searchPane input.dtsp-paneInputButton:hover, div.dtsp-searchPane div.dtsp-searchPane button.dtsp-paneButton:hover {
+  background-color: transparent;
+}
+div.dtsp-searchPane div.dataTables_wrapper div.dataTables_scrollBody table tr > th, div.dtsp-searchPane div.dtsp-searchPane div.dataTables_wrapper div.dataTables_scrollBody table tr > td {
+  padding: 0.5em 1em;
+}
+
+body.newlook {
+  background-color: #FFF;
+  font-size: 14px;
+  line-height: 1.4;
+}
+body.newlook header.site-header {
+  background-color: #363636 !important;
+  border-bottom: none !important;
+}
+body.newlook .side-menu {
+  background-color: #363636;
+  border-right: none;
+}
+body.newlook .side-menu .side-menu-list .fa, body.newlook .side-menu .side-menu-list .font-icon, body.newlook .side-menu .side-menu-list .glyphicon, body.newlook .side-menu .side-menu-list .tag-color {
+  position: relative;
+  left: auto;
+  top: auto;
+  line-height: inherit;
+  font-size: inherit;
+  color: #b5121a !important;
+}
+body.newlook .side-menu .side-menu-list .lbl {
+  width: 170px;
+}
+body.newlook .side-menu .side-menu-list > li {
+  border-bottom: 1px solid #505050;
+}
+body.newlook .side-menu .side-menu-list > li > * {
+  padding: 0.5em 0.5em 0.5em 2em;
+  font-size: 14px;
+  line-height: 1.5;
+}
+body.newlook .side-menu .side-menu-list > li > span, body.newlook .side-menu .side-menu-list li > a > span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body.newlook .side-menu .side-menu-list > li > span::before, body.newlook .side-menu .side-menu-list li > a > span::before {
+  border-top-color: #b5121a !important;
+}
+body.newlook .side-menu .side-menu-list a:hover, body.newlook .side-menu .side-menu-list > li > span:hover {
+  background-color: #111 !important;
+}
+body.newlook .side-menu .side-menu-list > li.opened.with-sub a .lbl,
+body.newlook .side-menu .side-menu-list > li.opened.with-sub > span .lbl,
+body.newlook .side-menu .side-menu-list > li.opened {
+  background-color: #111;
+}
+body.newlook .side-menu .side-menu-list ul li a.menu_link {
+  display: flex;
+  padding: 0;
+  font-size: inherit;
+}
+body.newlook .side-menu .side-menu-list ul li a.menu_link .lbl {
+  font-size: inherit;
+  padding: 0;
+  font-size: 12px !important;
+}
+body.newlook .side-menu > li.opened.with-sub a:hover,
+body.newlook .side-menu > li.opened.with-sub > span:hover {
+  background-color: unset !important;
+}
+body.newlook .side-menu a, body.newlook .side-menu .side-menu-list .lbl {
+  color: #FFF;
+}
+body.newlook .side-menu .jspPane {
+  padding-top: 80px !important;
+}
+body.newlook .top_breadcrumb {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px;
+  padding: 0 15px;
+  background-color: #505050;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  line-height: 2;
+}
+body.newlook .top_breadcrumb .breadcrumb {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  font-size: inherit;
+  line-height: inherit;
+}
+body.newlook .top_breadcrumb .top_about_page {
+  position: relative;
+  right: auto;
+  top: auto;
+}
+body.newlook .top_breadcrumb a {
+  color: #FFF !important;
+}
+body.newlook .page-content {
+  padding: 80px 0 0 240px !important;
+}
+body.newlook .page-content .container-fluid .page-content-inner {
+  padding: 1em;
+}
+body.newlook .page-content .container-fluid .page-content-inner h1 {
+  font-weight: 700;
+}
+body.newlook .page-content a, body.newlook .page-content a:focus, body.newlook .page-content a:hover {
+  color: #b5121a;
+}
+body.newlook .page-content .page-link {
+  padding: 0.25em 0.5em;
+}
+body.newlook .page-content .page-item.active .page-link {
+  background-color: #b5121a !important;
+  border-color: #b5121a !important;
+}/*# sourceMappingURL=custom-datatables-searchpanes.css.map */

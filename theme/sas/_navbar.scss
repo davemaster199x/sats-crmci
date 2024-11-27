@@ -1,0 +1,110 @@
+.theme-picton-blue {
+  .site-header {
+    background: $primary !important;
+    border-color: $primary !important;
+
+    .navbar-static-top {
+      justify-content: end;
+      text-align: center;
+      margin-bottom: 0;
+
+      ul {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+        -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+      }
+    }
+
+    .navbar {
+      background-color: $primary !important;
+      transition: background-color 0.3s ease-in-out;
+
+      .container-fluid {
+        // margin-left: 6rem !important;
+        // margin-right: 6rem !important;
+
+        @include m.tablet {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        .navbar-brand {
+          @include m.fold {
+            width: 50%;
+          }
+        }
+      }
+
+      .navbar-nav {
+        text-wrap: nowrap;
+      }
+
+      .nav-item {
+        border-right: 1px solid #fafafa;
+
+        @include m.tablet {
+          border: none;
+        }
+
+        .nav-link {
+          .profile {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: transparent;
+            border: none;
+          }
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+
+      .nav-item a {
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 0;
+        margin: 0 0.5rem;
+      }
+
+      .dropdown-menu {
+        padding: 1rem;
+
+        &.user {
+          left: -6rem;
+        }
+
+        a {
+          padding: 0.5rem;
+          margin-left: 0;
+
+          &.active {
+            color: #fff !important;
+            text-decoration: none !important;
+            background-color: $primary !important;
+          }
+
+          &:active {
+            color: #fff !important;
+            text-decoration: none !important;
+            background-color: $primary !important;
+          }
+
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+
+      .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+      }
+    }
+  }
+}

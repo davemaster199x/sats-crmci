@@ -1,0 +1,40 @@
+#MIGRATING TO NEW CI/CD
+
+image: atlassian/default-image:4
+
+pipelines:
+  branches:
+    dev:
+      - parallel:
+          - step:
+              name: 'Deploy to STAGING SATS AU'
+              deployment: stagingau
+              script:
+                - echo 'Deploying to STAGING - SATS AU staging_crm'
+                - curl -ksS https://crm.staging.sats.com.au/sats-auto-pull.php
+          - step:
+              name: 'Deploy to STAGING SAS'
+              deployment: stagingsas
+              script:
+                - echo 'Deploying to STAGING - SAS stagingcrm'
+                - curl -ksS https://crm.staging.smokealarmsolutions.com.au/sats-auto-pull.php
+    production:
+      - parallel:
+          - step:
+              name: 'Deploy to PROD SATS AU'
+              deployment: prodau
+              script:
+                - echo 'Deploying to PRODUCTION - SATS AU crm'
+                - curl -ksS https://crm.sats.com.au/sats-auto-pull.php
+          - step:
+              name: 'Deploy to PROD SATS NZ'
+              deployment: prodnz
+              script:
+                - echo 'Deploying to PRODUCTION - SATS NZ crm'
+                - curl -ksS https://crm.sats.co.nz/sats-auto-pull.php
+          - step:
+              name: 'Deploy to PROD SAS'
+              deployment: prodsas
+              script:
+                - echo 'Deploying to PRODUCTION - SAS crm'
+                - curl -ksS https://crm.smokealarmsolutions.com.au/sats-auto-pull.php

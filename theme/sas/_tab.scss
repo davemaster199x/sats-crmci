@@ -1,0 +1,22 @@
+.tabs-section-nav {
+  .nav-link {
+    &.active {
+      .nav-link-in {
+        // border: none;
+        border-top-color: $primary !important;
+        color: $primary !important;
+
+        i,
+        .fa {
+          color: $primary !important;
+        }
+      }
+    }
+  }
+}
+
+.process_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

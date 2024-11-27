@@ -1,0 +1,153 @@
+################################################################
+# CRM GIT IGNORE LIST
+
+# cpanel dirs
+/.well-known
+/cgi-bin
+
+# ignore application cache and logs, but keep all index and cache files
+!application/*/.htaccess
+application/cache/*
+!application/cache/index.html
+application/logs/*
+!application/logs/index.html
+
+# ignore user upload folders
+/images/alarm_images
+/images/cw_image
+/images/cw_image/au
+/images/cw_image/nz
+/images/driver_license
+/images/electrical_license
+/images/incident
+/images/kms_files
+/images/smoke_alarms
+/images/ss_image
+/images/ss_image/au
+/images/ss_image/nz
+/images/staff_profile
+/images/vehicle
+/images/wm_ts
+/images/wm_ts/au
+/images/wm_ts/nz
+/property_files
+/uploads
+
+# ignore user upload files
+/images/alarm_images/**
+/images/cw_image/**
+/images/cw_image/au/**
+/images/cw_image/nz/**
+/images/driver_license/**
+/images/electrical_license/**
+/images/incident/**
+/images/kms_files/**
+/images/smoke_alarms/**
+/images/ss_image/**
+/images/ss_image/au/**
+/images/ss_image/nz/**
+/images/staff_profile/**
+/images/vehicle/**
+/images/wm_ts/**
+/images/wm_ts/au/**
+/images/wm_ts/nz/**
+
+
+
+
+
+/uploads/**
+/uploads/admin_documents
+/uploads/agency_files
+/uploads/agent_documents
+/uploads/complaints_files
+/uploads/crm_task_screenshots
+/uploads/expenses
+/uploads/icons
+/uploads/property_files
+/uploads/request_summary_files
+/uploads/sales_document
+/uploads/switchboard_image
+/uploads/tech_documents
+/uploads/vaccination_certificates
+/uploads/vehicle_files
+/uploads/vehicle_log_files
+/uploads/water_meter
+
+
+# the legacy way of hoarding sessions that never deleted
+/session
+
+# composer packages dont need to be in our repository
+/vendor
+
+/.ftpquota
+/.htaccess
+/.git-ftp.log
+/.user.ini
+/php.ini
+/dpphpinfo.php
+/error_log
+/testheaders.php
+
+
+################################################################
+
+# GENERIC IGNORES
+.DS_Store
+.env
+/dbtest.php
+
+# Ignore database config and should not be tracked. Updated file should be on application/config/database.php.sample
+#application/config/database.php
+#------------------------
+
+application/config/local/*
+
+# phpstorm CI autocomplete helper
+phpstorm.php
+
+
+user_guide_src/build/*
+user_guide_src/cilexer/build/*
+user_guide_src/cilexer/dist/*
+user_guide_src/cilexer/pycilexer.egg-info/*
+
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+## Sublime Text cache files
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+/tests/tests/
+/tests/results/
+
+#added
+
+
+#session files
+
+*.vscode
+
+
+# Created by https://www.gitignore.io/api/visualstudiocode
+# Edit at https://www.gitignore.io/?templates=visualstudiocode
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
+# End of https://www.gitignore.io/api/visualstudiocode

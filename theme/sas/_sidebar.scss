@@ -1,0 +1,17 @@
+.theme-picton-blue {
+  .side-menu {
+    .side-menu-list {
+      .font-icon,
+      .glyphicon,
+      .fa {
+        color: $primary !important;
+      }
+
+      li.with-sub {
+        span:before {
+          border-top-color: $primary !important;
+        }
+      }
+    }
+  }
+}
